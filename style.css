@@ -1,0 +1,148 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto Mono', monospace;
+}
+body{
+	background: #00000E;
+}
+.toggle-btn{
+	display: none;
+}
+nav{
+	display: flex;
+	background: white;
+	box-shadow: 0px 0px 10px 4px grey;
+	align-items: center;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 10;
+}
+nav img{
+	height: 60px;
+}
+nav ul{
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 60%;
+}
+.logo{
+	width: 40%;
+	display: flex;
+	justify-content: center;
+}
+nav ul li a{
+	text-decoration: none;
+	color: black;
+	display: block;
+	font-weight: bold;
+	padding: 22px 20px;
+	font-size: 1.1rem;
+}
+nav ul li a:hover{
+	background: #000;
+	color: #fff;
+}
+h1, h2{
+	font-weight: bold;
+	text-align: center;
+	margin-top: 120px;
+	color: white;
+}
+h2{
+	padding: 0px 50px;
+	margin-top: 50px;
+}
+.button{
+	margin-top: 50px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.btn{
+	color: black;
+	background: transparent;
+	text-decoration: none;
+	color: #fff;
+	width: 40%;
+	padding: 20px 0px;
+	text-align: center;
+	font-weight: 800;
+	font-size: 25px;
+	border: 3px solid #fff;
+	display: block;
+}
+.btn:hover{
+	color: #000020;
+	background: #fff;
+}
+.notes{
+	padding: 30px;
+}
+.notes h2{
+	text-align: left;
+	position: relative;
+	bottom: 25px;
+	border: 1px solid white;
+	padding: 30px;
+}
+
+@media only screen and (max-width: 950px)
+{
+	nav{
+		flex-direction: column;
+	}
+	nav ul{
+		flex-direction: column;
+		display: none;
+		width: 100%;
+	}
+	nav ul li a{
+		text-align: center;
+		padding: 20px;
+	}
+	.toggle-btn{
+		display: block;
+		margin-right: 20px;
+	}
+	.toggle-btn i{
+		font-size: 25px;
+		cursor: pointer;
+	}
+	.logo{
+		width: 100%;
+		height: 60px;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.logo img{
+		background: ;
+		margin-left: 10px;
+		height: 40px;
+	}
+	ul.active{
+		display: block;
+	}
+	h1{
+		font-size: 2rem;
+		padding: 0px 10px;
+	}
+	.button{
+		flex-direction: column;
+	}
+	.notes h1{
+		font-size: 2rem;
+	}
+	.btn{
+		font-size: 1.2rem;
+		width: 85%;
+		margin-top: 20px;
+	}
+	.notes h2{
+		font-size: 1.1rem;
+	}
+}
