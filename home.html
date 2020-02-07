@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>VSNHS : School of Talents</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: "Product Sans", sans-serif;
+		}
+		header{
+			height: 120px;
+			background-color: white;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 0px 0px 00px 00px;
+			width: 100%;
+			box-shadow: 0px 0px 10px 3px gold;
+		}
+		header .logo{
+			height: 90px;
+			border-radius: 50%;
+			box-shadow: 0px 0px 10px 2px orange;
+		}
+		nav ul{
+			list-style-type: none;
+		}
+		nav ul li a{
+			text-decoration: none;
+			color: #3D3D3D;
+			display: block;
+			padding: 6px 22px;
+			transition: 0.1s ease;
+		}
+		ul li a:hover{
+			color: #000000;
+			font-size: 1.1rem;
+			border-bottom: 2px solid red;
+			border-top: 2px solid red;
+		}
+		nav.part-1, nav.part-2{
+			height: 100%;
+			width: 100%;
+			justify-content: center;
+		}
+		nav.part-1 ul, nav.part-2 ul{
+			display: flex;
+			height: 100%;
+			align-items: center;
+			width: 100%;
+			justify-content: space-around;
+		}
+		.active a{
+			font-size: 1.5rem;
+		}
+		ul li.active a:hover{
+			border: none;
+			font-size: 1.5rem;
+		}
+		.banner{
+			height:35vh;
+			background: linear-gradient(to left, red, blue);
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.banner h1, .banner p{
+			color: white;
+		}
+		.banner p{
+			padding-bottom: 10px;
+		}
+		.banner a{
+			padding: 10px 30px;
+			background: #FFDA00;
+			text-decoration: none;
+			color: black;
+			border-radius: 40px;
+			margin-top: 30px;
+			transition: 0.2s ease;
+		}
+		.banner a:hover{
+			font-size: 1.2rem;
+		}
+		.banner::after{
+			content: '';
+			width: 100%;
+			height: 40%;
+			position: absolute;
+			transform: skewY(20deg);
+			background: inherit;
+			z-index: -1;
+		}
+		.banner::before{
+			content: '';
+			width: 100%;
+			height: 40%;
+			position: absolute;
+			transform: skewY(-20deg);
+			background: inherit;
+			z-index: -1;
+		}
+		.about{
+			height: 300px;
+			width: 90%;
+			margin: auto;
+			background-color: white;
+			display: flex;
+			align-items: center;
+			border-radius: 10px;
+			box-shadow: 0px 0px 12px 4px grey;
+		}
+		.about img{
+			height: 95%;
+			width: 400px;
+		}
+		.about-note{
+			display: flex;
+			flex-direction: column;
+			padding: 0px 40px;
+		}
+		.about-note h1{
+			margin-bottom: 15px;
+			font-size: 1.8rem;
+		}
+		.image{
+			padding: 0px 40px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+	<nav class="part-1">
+		<ul>
+			<li class="active"><a href="#">Home</a></li>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Contact Us</a></li>
+		</ul>
+	</nav>
+		<img src="logo.jpg" class="logo" />
+	<nav class="part-2">
+		<ul>
+			<li><a href="#">Academics</a></li>
+			<li><a href="#">Admission</a></li>
+			<li><a href="#">Gallery</a></li>
+		</ul>
+	</nav>
+	</header>
+
+	<div class="banner">
+		<p>Welcome to the official Website of</p>
+		<h1>Vivekananda Siksha Niketan High School</h1>
+		<a href="#">Watch Video</a>
+	</div>
+
+	<div class="about">
+		<div class="about-note">
+		<h1>A Note About Us</h1>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+	</div>
+		<div class="image">
+			<img src="main_pic.jpg"/>
+		</div>
+	</div>
+
+	<div class="teachers" style="height: 900px;">
+		
+	</div>
+
+</body>
+</html>
